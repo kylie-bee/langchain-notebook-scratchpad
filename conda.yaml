@@ -2,10 +2,15 @@ name: langchain
 channels:
   - conda-forge
 dependencies:
+  - ipykernel
+  - python-dotenv
+
   - langchain=0.1.16
-  - langchain_openai=0.1.4
+  - langchain-openai
 
   - aiosqlite=0.19.0
   - pip=23.3.2
   - pip:
       - tavily-python==0.3.3
+      - langgraph
+      
